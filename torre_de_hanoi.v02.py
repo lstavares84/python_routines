@@ -75,7 +75,7 @@ def imprimir(n):
     print(pinos_centralizadores[1].center(21), end="  ")
     print(pinos_centralizadores[2].center(21))
     print('\n\n\n')
-    time.sleep(2)
+    
 
 
 def mover_discos_graficamente(pino_de_origem, pino_de_destino):
