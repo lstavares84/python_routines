@@ -30,7 +30,7 @@ torre_de_hanoi(len(discos), pinos_centralizadores[0], pinos_centralizadores[-1],
     
 '''
     Nesta versão a quantidade de pinos centralizadores é igual a quantidade de discos
-porém como visto na execução do algoritmo v01 somente os dois primeiros e o último pino
+porém como visto na execução deste código, somente os dois primeiros e o último pino
 são utilizados para resolução do problema, sendo desnecessário ter mais que 3 pinos
 centralizadores ocupando espaço da memória.
 '''
