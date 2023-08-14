@@ -73,8 +73,8 @@ def imprimir(n):
     print(pinos_centralizadores[0].center(21), end="  ")
     print(pinos_centralizadores[1].center(21), end="  ")
     print(pinos_centralizadores[2].center(21))
-    print('\n\n\n')
-    time.sleep(2)
+    print('\n')
+    time.sleep(1.5)
 
 
 def mover_discos_graficamente(pino_de_origem, pino_de_destino):
@@ -93,8 +93,11 @@ qnt_pinos_centralizadores = 3 #A quantidade de pinos é fixada em 3 conforme vis
 
 discos = [f"disco_{i+1}" for i in range(qnt_discos)] #Criação da lista com a quantidade de discos definido pelo usuário
 pinos_centralizadores = [chr(65 + i) for i in range(qnt_pinos_centralizadores)] #Criação da lista alfabética com a quantidade de letras igual a quantidade de pinos inserida pelo usuário
-print(pinos_centralizadores)
-print(discos)
+print('\n')
+print(f'Os pinos centralizadors serão: {pinos_centralizadores}')
+print(f'Os discos serão: {discos}')
+print('\n')
+print('POSIÇÃO INICIAL DE TODOS OS DISCOS:')
 
 alocacao_grafica_discos = {
     pinos_centralizadores[0]: [],
