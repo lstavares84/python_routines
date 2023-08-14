@@ -20,6 +20,8 @@ def torre_de_hanoi(n, pino_de_origem, pino_de_destino, pino_auxiliar):
     if n > 0:
         torre_de_hanoi(n - 1, pino_de_origem, pino_auxiliar, pino_de_destino)
         print(f"Mover {discos[n-1]} do pino {pino_de_origem} para o {pino_de_destino}")
+        mover_discos_graficamente(pino_de_origem, pino_de_destino)
+        imprimir(len(discos))
         time.sleep(1)
         torre_de_hanoi(n - 1, pino_auxiliar, pino_de_destino, pino_de_origem)
 
@@ -38,9 +40,9 @@ def tamanho_discos(n):
 
 
 def imprimir(n):
-    t = towers[pinos_centralizadores[0]][::-1]
-    u = towers[pinos_centralizadores[1]][::-1]
-    v = towers[pinos_centralizadores[2]][::-1]
+    t = alocacao_grafica_discos[pinos_centralizadores[0]][::-1]
+    u = alocacao_grafica_discos[pinos_centralizadores[1]][::-1]
+    v = alocacao_grafica_discos[pinos_centralizadores[2]][::-1]
     p = len(t)
     q = len(u)
     r = len(v)
@@ -70,10 +72,15 @@ def imprimir(n):
     print('═════════════════════')
     print(pinos_centralizadores[0].center(21), end="  ")
     print(pinos_centralizadores[1].center(21), end="  ")
-    print('Auxiliary'.center(21))
+    print(pinos_centralizadores[2].center(21))
     print('\n\n\n')
     time.sleep(2)
 
+
+def mover_discos_graficamente(pino_de_origem, pino_de_destino):
+    global tamanho_discos
+    alocacao_grafica_discos[pino_de_destino].append(alocacao_grafica_discos[pino_de_origem][-1])
+    alocacao_grafica_discos[pino_de_origem].pop(-1)
 ############### FINAL DAS FUNÇÕES GRÁFICA ###############
 
 
