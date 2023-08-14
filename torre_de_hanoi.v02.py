@@ -20,7 +20,6 @@ def torre_de_hanoi(n, pino_de_origem, pino_de_destino, pino_auxiliar):
         print(f"Mover {discos[n-1]} do pino {pino_de_origem} para o {pino_de_destino}")
         mover_discos_graficamente(pino_de_origem, pino_de_destino)
         imprimir(len(discos))
-        time.sleep(1)
         torre_de_hanoi(n - 1, pino_auxiliar, pino_de_destino, pino_de_origem)
 ############### FINAL DA FUNÇÃO DE RECURSÃO DA TORRE DE HANOI ###############
 
@@ -75,7 +74,7 @@ def imprimir(n):
     print(pinos_centralizadores[1].center(21), end="  ")
     print(pinos_centralizadores[2].center(21))
     print('\n\n\n')
-    
+    time.sleep(2)
 
 
 def mover_discos_graficamente(pino_de_origem, pino_de_destino):
