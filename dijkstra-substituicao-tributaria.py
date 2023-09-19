@@ -93,3 +93,84 @@ tabela_preco_diesel = {
     "SE": 4.93,
     "TO": 4.95,
 }
+
+
+
+def dijkstra(start, end, distancias): # dijkstra subroutine/function
+
+    # Variáveis para armazenar a distância total (f) e a distância acumulada (g) entre as cidades definidas como INÍCIO e FIM
+    g = {node: float('inf') for node in distancias}
+    f = {node: float('inf') for node in distancias}
+
+    parents = {node: None for node in distancias} # nó superior ou nó anterior
+
+    # PREDEFINIÇÃO de variáveis antes de começar a calcular
+    g[start] = 0 # Distância total (f) e distância acumulada (g) a partir do ponto de INÍCIO
+    f[start] = 0 # Distância total (f) e distância acumulada (g) a partir do ponto de INÍCIO
+    closed = set() # Variável para armazenar os caminhos possíveis já testados
+    open_set = { start } # Variável para armazenar os caminhos possíveis A SEREM testados
+
+    ### LOOP PARA CALCULAR A MENOR DISTÂNCIA
+    while open_set: # Enquanto houver caminhos não testados...
+        # Verifica o caminho atual com a menor distância entre a cidade atual e a cidade vizinha e continue procurando
+        current = min(open_set, key=lambda node: f[node])
+
+        # SE a cidade atual (nó) for o destino (FIM), calcule do fim até o início o caminho completo usando os nós pais
+        if current == end:
+            path = []
+            while current:
+                path.append(current)
+                current = parents[current]
+            path.reverse()
+            return path
+        # FIM DE # SE a cidade atual (nó) for o destino (FIM), calcule do fim até o início o caminho completo usando os nós pais
+
+        # Para mover o nó testado de open_set (não testado) para closed (caminhos testados)
+        open_set.remove(current)
+        closed.add(current)
+        # FIM DE Para mover o nó testado de open_set (não testado) para closed (caminhos testados)
+
+        # Identificar todas as cidades vizinhas da cidade/nó atual
+        for neighbor in distancias[current]:
+            
+            # Verificação rápida se o vizinho já foi testado antes ou não. SE ainda não foi testado, continue.
+            if neighbor in closed:
+                continue
+            # FIM DE Verificação rápida se o vizinho já foi testado antes ou não. SE ainda não foi testado, continue.
+
+            tentative_g = g[current] + distancias[current][neighbor] # Calcular a distância acumulada do nó/cidade atual para o nó/cidade vizinho selecionado
+            
+            # SE a distância acumulada até o nó/cidade selecionado for menor (mas não igual) à distância acumulada atual, por favor, atualize "g[vizinho]"
+            # e "f[vizinho]".
+            if tentative_g < g[neighbor]:
+                parents[neighbor] = current # Define o nó/cidade atual como pai do vizinho atual
+                g[neighbor] = tentative_g # atualiza a distância acumulada
+                f[neighbor] = g[neighbor] # estima a distância total restante para chegar à cidade/nó final
+                
+                # Teste se o vizinho atual não foi testado antes. Mova o vizinho atual testado de não testado
+                if neighbor not in open_set:
+                    open_set.add(neighbor)
+                # FIM DE Teste se o vizinho atual não foi testado antes. Mova o vizinho atual testado de não testado
+
+            # FIM DE SE a distância acumulada até o nó/cidade selecionado for menor (mas não igual) à distância acumulada atual, por favor, atualize "g[vizinho]"
+            # e "f[vizinho]".
+
+        # FIM DE # Identificar todas as cidades vizinhas da cidade/nó atual
+
+    return None # SE não houver caminho de INÍCIO para FIM, retorne None
+    ### FIM DO LOOP PARA CALCULAR A MENOR DISTÂNCIA
+
+######### CÓDIGO PRINCIPAL #########
+
+# DEFINIÇÃO PELO USUÁRIO de INÍCIO (start) e FIM (end) como no Google Maps
+start = 'SE' # digite o nome da cidade onde a viagem começará
+end = 'SP' # digite o nome da cidade de destino
+
+# Chame a função dijkstra para calcular a menor distância
+path = dijkstra(start, end, distancias)
+
+# Imprime a solução na tela para o usuário
+print('\n\n############## SOLUÇÃO ##############')
+print(f'O caminho mais curto de {start} para {end} é:\n{path}\n\n')
+
+######### FIM DO CÓDIGO PRINCIPAL #########
