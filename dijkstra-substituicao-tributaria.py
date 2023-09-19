@@ -354,88 +354,37 @@ distancias = {
 }
 
 # Tabela de alíquotas de ICMS interestadual por estado
+
 tabela_icms = {
-    "AC": {
-        "aliquota_interna": 17,
-        "aliquota_interestadual": 12
-    },
-    "AL": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "AM": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "AP": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "BA": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "CE": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "DF": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "ES": {
-        "aliquota_interna": 17,
-        "aliquota_interestadual": 12
-    },
-    "GO": {
-        "aliquota_interna": 17,
-        "aliquota_interestadual": 12
-    },
-    "MA": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "MG": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "MS": {
-        "aliquota_interna": 17,
-        "aliquota_interestadual": 12
-    },
-    "MT": {
-        "aliquota_interna": 17,
-        "aliquota_interestadual": 12
-    },
-    "PA": {
-        "aliquota_interna": 17,
-        "aliquota_interestadual": 12
-    },
-    "PB": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "PE": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "PI": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "PR": {
-        "aliquota_interna": 18,
-        "aliquota_interestadual": 12
-    },
-    "RJ": {
-        "aliquota_interna": 20,  # Ou 18% em algumas situações
-        "aliquota_interestadual": 12
-    },
-    "RN": {
-        "aliquota_interna": 18,  # Ou 17,5% em algumas situações
-        "aliquota_interestadual": 12
-    },
+    'AC': {'AC': 17,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'AL': {'AC': 12,'AL': 17,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'AM': {'AC': 12,'AL': 12,'AM': 18,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'AP': {'AC': 12,'AL': 12,'AM': 12,'AP': 18,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'BA': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 17,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'CE': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 17,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'DF': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 18,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'ES': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 17,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'GO': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 17,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'MA': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 17,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'MT': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 17,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'MS': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 17,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'MG': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 17,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'PA': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 17,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'PB': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 17,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'PR': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 17,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'PE': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 17,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'PI': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 17,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'RN': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 17,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'RS': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 17,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'RJ': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 17,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'RO': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 17,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'RR': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 17,'SC': 12,'SP': 12,'SE': 12,'TO': 12},
+    'SC': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 17,'SP': 12,'SE': 12,'TO': 12},
+    'SP': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 17,'SE': 12,'TO': 12},
+    'SE': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 17,'TO': 12},
+    'TO': {'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MT': 12,'MS': 12,'MG': 12,'PA': 12,'PB': 12,'PR': 12,'PE': 12,'PI': 12,'RN': 12,'RS': 12,'RJ': 12,'RO': 12,'RR': 12,'SC': 12,'SP': 12,'SE': 12,'TO': 17}
 }
+
 
 # Tabela de preços do óleo diesel por estado
 tabela_preco_diesel = {
@@ -466,40 +415,3 @@ tabela_preco_diesel = {
     "SE": 4.93,
     "TO": 4.95,
 }
-
-# Função para calcular a distância entre duas capitais
-def calcular_distancia(capital_origem, capital_destino):
-    chave = f"{capital_origem}:{capital_destino}"
-    if chave in distancias:
-        return distancias[chave]
-    else:
-        return None
-
-# Exemplo de uso:
-estado_origem = "SP"
-estado_destino = "RJ"
-
-if estado_origem in tabela_icms and estado_destino in tabela_icms:
-    aliquota_interna = tabela_icms[estado_origem]["aliquota_interna"]
-    aliquota_interestadual = tabela_icms[estado_destino]["aliquota_interestadual"]
-    
-    if estado_origem in tabela_preco_diesel:
-        preco_diesel = tabela_preco_diesel[estado_origem]
-        valor_icms = (preco_diesel * aliquota_interestadual / 100) - (preco_diesel * aliquota_interna / 100)
-        
-        # Calcular a distância entre as capitais
-        capital_origem = estado_origem
-        capital_destino = estado_destino
-        distancia = calcular_distancia(capital_origem, capital_destino)
-        
-        if distancia is not None:
-            print(f"Preço do óleo diesel em {estado_origem}: R${preco_diesel}")
-            print(f"Alíquota de ICMS de {estado_origem} para {estado_destino}: {aliquota_interna}% (interna) x {aliquota_interestadual}% (interestadual)")
-            print(f"Distância entre {capital_origem} e {capital_destino}: {distancia} km")
-            print(f"Valor do ICMS a ser pago: R${valor_icms:.2f}")
-        else:
-            print(f"Não foi possível calcular a distância entre {capital_origem} e {capital_destino}.")
-    else:
-        print(f"Preço do óleo diesel em {estado_origem} não encontrado na tabela.")
-else:
-    print("Estado de origem ou destino não encontrado na tabela.")
