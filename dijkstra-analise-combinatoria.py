@@ -194,4 +194,10 @@ for start in capitais:
             print(f"Calculando caminho de {start} para {end}...\n")
             shortest_distance_path, shortest_cost_path = dijkstra(start, end, distancias, tabela_preco_diesel)
             print("-----------------------------------------------------------\n")
+            
+            # Verifique se os caminhos são diferentes
+            if shortest_distance_path != shortest_cost_path:
+                print(f"Os caminhos de {start} para {end} têm resultados diferentes!")
+                break
+
 
