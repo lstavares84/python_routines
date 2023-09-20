@@ -54,6 +54,7 @@ tabela_preco_diesel = {
     "RN": 5.02,
     "RO": 5.35,
     "RR": 5.37,
+    "RS": 4.93,
     "SC": 4.96,
     "SP": 4.91,
     "SE": 4.93,
@@ -137,15 +138,15 @@ def dijkstra(start, end, distancias, tabela_preco_diesel):
                 menor_custo_caminho = path.copy()
 
             # Imprime a solução na tela para o usuário
-            print('\n\n############## CÁLCULO ##############')
+            # print('\n\n############## CÁLCULO ##############')
             # print(f'O caminho mais curto de {start} para {end} é:')
             # print(f'Caminho: {path}')
             # print(f'Distância total percorrida: {total_distance}')
             # print(f'Custo total percorrido: {total_cost}\n')
             # print('Distâncias e custos de diesel entre os nós ao longo do caminho:')
-            for distance, cost in diesel_costs:
-                print(distance)
-                print(cost)
+            # for distance, cost in diesel_costs:
+            #     print(distance)
+            #     print(cost)
 
             break  # Saia do loop assim que encontrar o destino
 
