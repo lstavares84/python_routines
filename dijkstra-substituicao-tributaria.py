@@ -30,7 +30,7 @@ distancias = {
 
 }
 
-#distancias = {
+#distancias_SEM_fronteiras= {
 #'SE':{'SE': 0,'PA': 2079,'MG': 1578,'RR': 6000,'DF': 1652,'MS': 2765,'MT': 2775,'PR': 2595,'SC': 2892,'CE': 1183,'GO': 1848,'PB': 611,'AP': None,'AL': 294,'AM': 5215,'RN': 788,'TO': 1662,'RS': 3296,'RO': 4230,'PE': 501,'AC': 4763,'RJ': 1855,'BA': 356,'MA': 1578,'SP': 2187,'PI': 1142,'ES': 1408},
 #'PA':{'SE': 2079,'PA': 0,'MG': 2824,'RR': 6083,'DF': 2120,'MS': 2942,'MT': 2941,'PR': 3193,'SC': 3500,'CE': 1610,'GO': 2017,'PB': 2161,'AP': None,'AL': 2173,'AM': 5298,'RN': 2108,'TO': 1283,'RS': 3852,'RO': 4397,'PE': 2074,'AC': 4931,'RJ': 3250,'BA': 2100,'MA': 806,'SP': 2933,'PI': 947,'ES': 3108},
 #'MG':{'SE': 1578,'PA': 2824,'MG': 0,'RR': 4736,'DF': 716,'MS': 1453,'MT': 1594,'PR': 1004,'SC': 1301,'CE': 2528,'GO': 906,'PB': 2171,'AP': None,'AL': 1854,'AM': 3951,'RN': 2348,'TO': 1690,'RS': 1712,'RO': 3050,'PE': 2061,'AC': 3584,'RJ': 434,'BA': 1372,'MA': 2738,'SP': 586,'PI': 2302,'ES': 524},
@@ -85,7 +85,7 @@ tabela_icms = {
 'PR':{'AC': 7,'AL': 7,'AM': 7,'AP': 7,'BA': 7,'CE': 7,'DF': 7,'ES': 7,'GO': 7,'MA': 7,'MG': 12,'MS': 7,'MT': 7,'PA': 7,'PB': 7,'PE': 7,'PI': 7,'PR': 18,'RJ': 12,'RN': 7,'RO': 7,'RR': 7,'RS': 12,'SC': 12,'SE': 7,'SP': 12,'TO': 7},
 'RJ':{'AC': 7,'AL': 7,'AM': 7,'AP': 7,'BA': 7,'CE': 7,'DF': 7,'ES': 7,'GO': 7,'MA': 7,'MG': 12,'MS': 7,'MT': 7,'PA': 7,'PB': 7,'PE': 7,'PI': 7,'PR': 12,'RJ': 20,'RN': 7,'RO': 7,'RR': 7,'RS': 12,'SC': 12,'SE': 7,'SP': 12,'TO': 7},
 'RN':{'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MG': 12,'MS': 12,'MT': 12,'PA': 12,'PB': 12,'PE': 12,'PI': 12,'PR': 12,'RJ': 12,'RN': 18,'RO': 12,'RR': 12,'RS': 12,'SC': 12,'SE': 12,'SP': 12,'TO': 12},
-'RO':{'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MG': 12,'MS': 12,'MT': 12,'PA': 12,'PB': 12,'PE': 12,'PI': 12,'PR': 12,'RJ': 12,'RN': 12,'RO': 17,5,'RR': 12,'RS': 12,'SC': 12,'SE': 12,'SP': 12,'TO': 12},
+'RO':{'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MG': 12,'MS': 12,'MT': 12,'PA': 12,'PB': 12,'PE': 12,'PI': 12,'PR': 12,'RJ': 12,'RN': 12,'RO': 17.5,'RR': 12,'RS': 12,'SC': 12,'SE': 12,'SP': 12,'TO': 12},
 'RR':{'AC': 12,'AL': 12,'AM': 12,'AP': 12,'BA': 12,'CE': 12,'DF': 12,'ES': 12,'GO': 12,'MA': 12,'MG': 12,'MS': 12,'MT': 12,'PA': 12,'PB': 12,'PE': 12,'PI': 12,'PR': 12,'RJ': 12,'RN': 12,'RO': 12,'RR': 17,'RS': 12,'SC': 12,'SE': 12,'SP': 12,'TO': 12},
 'RS':{'AC': 7,'AL': 7,'AM': 7,'AP': 7,'BA': 7,'CE': 7,'DF': 7,'ES': 7,'GO': 7,'MA': 7,'MG': 12,'MS': 7,'MT': 7,'PA': 7,'PB': 7,'PE': 7,'PI': 7,'PR': 12,'RJ': 12,'RN': 7,'RO': 7,'RR': 7,'RS': 18,'SC': 12,'SE': 7,'SP': 12,'TO': 7},
 'SC':{'AC': 7,'AL': 7,'AM': 7,'AP': 7,'BA': 7,'CE': 7,'DF': 7,'ES': 7,'GO': 7,'MA': 7,'MG': 12,'MS': 7,'MT': 7,'PA': 7,'PB': 7,'PE': 7,'PI': 7,'PR': 12,'RJ': 12,'RN': 7,'RO': 7,'RR': 7,'RS': 12,'SC': 17,'SE': 7,'SP': 12,'TO': 7},
@@ -183,8 +183,8 @@ def dijkstra(start, end, distancias):
     ### FIM DO LOOP PARA CALCULAR A MENOR DISTÂNCIA
 
 # DEFINIÇÃO PELO USUÁRIO de INÍCIO (start) e FIM (end) como no Google Maps
-start = 'SE' # digite o nome da cidade onde a viagem começará
-end = 'SP' # digite o nome da cidade de destino
+start = 'PR' # digite o nome da cidade onde a viagem começará
+end = 'MA' # digite o nome da cidade de destino
 
 # Chame a função dijkstra para calcular a menor distância
 path = dijkstra(start, end, distancias)
