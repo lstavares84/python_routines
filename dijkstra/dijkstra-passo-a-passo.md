@@ -8,6 +8,17 @@ Inicializa a variável parents para armazenar os nós pais de cada nó durante o
 Inicializa outras variáveis, como closed para armazenar caminhos já testados, open_set para armazenar caminhos a serem testados e algumas variáveis para rastrear os caminhos com a menor distância e o menor custo. (Linhas de código 23-29)
 
 
+## g (accumulated distance):
+g representa a distância acumulada do nó de início (start) até o nó atual sendo analisado.
+Inicialmente, todos os valores em g são definidos como infinito (float('inf')), exceto o nó de início, que é definido como 0 (g[start] = 0).
+Durante a execução do algoritmo, g é atualizado à medida que novos caminhos mais curtos são encontrados. Se um caminho mais curto for encontrado para um nó, o valor g desse nó é atualizado para refletir a distância acumulada mais curta encontrada até o momento para alcançar esse nó.
+
+## f (total distance):
+f representa uma estimativa do custo total esperado para ir do nó de início até o nó de destino passando pelo nó atual sendo analisado.
+Assim como g, f é inicializado com valores infinitos para todos os nós, exceto o nó de início, que é definido como 0 (f[start] = 0).
+f é atualizado durante a execução do algoritmo. A ideia é que f seja uma estimativa da distância total do nó de início ao nó de destino, passando pelo nó atual. Em alguns casos, isso pode ser igual a g, mas em outros casos, pode ser uma estimativa heurística que considera também a distância estimada do nó atual ao nó de destino.
+
+
 # Passo 3: Loop Principal para Encontrar o Caminho Mais Curto
 Entra em um loop enquanto houver caminhos a serem testados (open_set). (Linha de código 31)
 
